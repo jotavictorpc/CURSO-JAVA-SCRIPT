@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(65, 115, 224);
+            color: white;
+            font-size: 2em;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1 class="tit">Iniciando os estudos com DOM</h1>
+    <p name="principal">Aqui vai um resultado</p>
+    <p>Venha conferir</p>
+    <div id="msg">
+        Clique em min
+    </div>
+
+
+
+    <script>
+        var p1 = window.document.getElementsByTagName("p")[1] /*SELECIONANDO POR MARCA E GUARDANDO NA VARIÁVEL*/
+        window.document.write("Está escrito assim: " + p1.innerText) /*MOSTRANDO NA TELA A VARIAVEL SELECIONADA*/
+        p1.style.color = "green" /*MUDANDO A COR DA VARIÁVEL*/
+
+
+        var corpo = window.document.body /*DEFININDO QUEM É A VARIAVEL NO DOCUMENTO DOM*/
+        corpo.style.background = "black" /*MUDANDO A COR DO FUNDO DA VARIAVEL*/
+
+
+        var d = window.document.getElementById("msg") /* POR ID*/
+        d.style.background = "green" /**/
+        d.innerText = "Estou aguardando..." /**/
+
+
+        var f = window.document.getElementsByName("principal")[0] /*SELECIONANDO POR NAME*/
+        f.style.color = "gray" /**/
+
+
+        var titulo = window.document.querySelector("h1.tit") /*SELECIONADO POR QUERYSELECTOR*/
+        titulo.style.color = "blue" /**/
+    </script>
+</body>
+</html>

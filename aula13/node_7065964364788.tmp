@@ -1,0 +1,13 @@
+var c = 1
+
+while(c <= 3 ) { /*Enquanto c <= 3, faça*/
+    console.log(`Passo ${c}`)
+    c +=1 /* C = C + 1  */ 
+}
+
+
+var falta = 1
+
+do {
+    console.log(`Falta ${falta}`)
+} while (falta <=5)

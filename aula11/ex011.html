@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalidade</title>
+</head>
+<body>
+    <h1>SAIBA SUA NATURALIDADE</h1>
+
+    <label for="cpais">Digite seu país:</label>
+    <input type="text" name="tpais" id="cpais">
+    <input type="button" value="Verificar" onclick="pais()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function pais() {
+            var pais = window.document.getElementById("cpais")
+            var res = window.document.getElementById("div#res")
+            
+            if (pais == "Brasil") { //ERRO NO IF
+                res.innerHTML = "Você é brasileiro"
+            } else {
+                res.innerHTML = "Você é estrangeiro"
+            }
+        }
+    </script>
+</body>
+</html>
